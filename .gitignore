@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# C extensions
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# PyCharm specific
+.idea/
+*.iml
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Environment variables
+.env
+
+# PIP file for dependencies
+Pipfile
+Pipfile.lock
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Ignore logs directory
+logs/
+
+# Exclude sensitive files
+credentials.py
+
+# Project-specific files to exclude
+Readme.txt
+PRODUCTS.json
+test_add_to_cart.py
+
+# Test-related
+.pytest_cache/

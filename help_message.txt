@@ -1,0 +1,33 @@
+🎉 Welcome to Our ShopBot 🎉
+
+Get ready to explore our products, manage your shopping cart, and easily place orders right from Telegram. Here's a 
+quick guide to get you started:
+
+🛍 Exploring Products
+- /browse: Discover all the amazing products we have in store. Scroll through the list to find your next purchase.
+- /search [keyword]: Looking for something specific? Use this command followed by a keyword to find exactly what you
+ need.
+
+🛒 Managing Your Cart
+- /buy [product_id] [quantity]: Found what you like? Add it to your cart with this command. Specify the product ID and 
+the quantity (optional). If you don't specify a quantity, we'll add one item by default.
+- /cart: Peek into your cart anytime to see what's waiting for you. We'll list all items along with their quantities.
+- /remove [product_id]: Changed your mind? Remove an item from your cart using its product ID.
+- /empty_cart: Want to start over? This command clears your cart completely, giving you a fresh start.
+
+🏁 Checking Out
+- /checkout: Ready to make it yours? Use this command to check out. We'll confirm your order and provide you with an
+order ID for tracking.
+
+🔍 Tracking Your Order
+- /track [order_id]: Stay updated on your order's status. Enter your order ID to get the latest update.
+
+❓ Need Help?
+- /help: Lost or need a reminder? This command brings up the help guide, so you know exactly what commands you can use.
+
+Tips for a Smooth Experience
+- Make sure to note down your product IDs and order ID for easy reference.
+- If you have any questions or need further assistance, don't hesitate to use the /help command.
+
+We hope you enjoy shopping with us. If you're ready, go ahead and /browse our catalog to see what we have in store for
+you. Happy shopping.

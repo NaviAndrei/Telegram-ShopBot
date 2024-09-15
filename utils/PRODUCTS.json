@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"name": "Viteza",
+		"price": 100
+	},
+	{
+		"id": 2,
+		"name": "Boabe) - Pharaoh Blue",
+		"price": 50
+	},
+	{
+		"id": 3,
+		"name": "Vitamina K",
+		"price": 200
+	},
+	{
+		"id": 4,
+		"name": "Carton",
+		"price": 50
+	},
+	{
+		"id": 5,
+		"name": "Cristal MD",
+		"price": 200
+	}
+]
