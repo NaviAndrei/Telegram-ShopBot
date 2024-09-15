@@ -74,6 +74,7 @@ credentials.py
 Readme.txt
 PRODUCTS.json
 test_add_to_cart.py
+main-old.py
 
 # Test-related
 .pytest_cache/
