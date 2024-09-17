@@ -73,7 +73,6 @@ credentials.py
 
 # Project-specific files to exclude
 Readme.txt
-PRODUCTS.json
 test_add_to_cart.py
 main-old.py
 

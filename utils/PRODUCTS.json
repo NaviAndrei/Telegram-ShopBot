@@ -1,27 +1,27 @@
 [
 	{
 		"id": 1,
-		"name": "Viteza",
+		"name": "Product 1",
 		"price": 100
 	},
 	{
 		"id": 2,
-		"name": "Boabe) - Pharaoh Blue",
+		"name": "Product 2",
 		"price": 50
 	},
 	{
 		"id": 3,
-		"name": "Vitamina K",
+		"name": "Product 3",
 		"price": 200
 	},
 	{
 		"id": 4,
-		"name": "Carton",
+		"name": "Product 4",
 		"price": 50
 	},
 	{
 		"id": 5,
-		"name": "Cristal MD",
+		"name": "Product 5",
 		"price": 200
 	}
 ]
