@@ -11,5 +11,5 @@ with open(os.path.join(os.path.dirname(__file__), '..', 'utils', 'PRODUCTS.json'
 async def browse_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message = "Available Products:\n"
     for product in PRODUCTS:
-        message += f"{product['id']}: {product['name']} - ${product['price']}\n"
+        message += f"{product['id']}: {product['name']} - {product['price']} RON\n"
     await update.message.reply_text(message)

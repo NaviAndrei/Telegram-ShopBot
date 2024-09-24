@@ -12,7 +12,7 @@ async def help_admin_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
         return
 
     # Define the path to your admin help message file
-    admin_help_file_path = 'Readme.txt'  # This line becomes unreachable if the user is not an admin.
+    admin_help_file_path = 'Admin-FAQ.txt'  # This line becomes unreachable if the user is not an admin.
 
     try:
         with open(admin_help_file_path, 'r') as file:

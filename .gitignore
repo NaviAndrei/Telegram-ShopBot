@@ -75,6 +75,7 @@ credentials.py
 Readme.txt
 test_add_to_cart.py
 main-old.py
+Admin-FAQ.txt
 
 # Test-related
 .pytest_cache/
