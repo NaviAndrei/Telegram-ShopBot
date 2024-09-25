@@ -1,5 +1,5 @@
 import os
-from telegram.ext import Application, CommandHandler, MessageHandler, filters
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters
 from commands.start_command import start_command
 from commands.help_command import help_command
 from commands.browse_command import browse_command
@@ -16,7 +16,8 @@ from commands.notify_pickup import notify_pickup
 from commands.send_order_photo import send_order_photo
 from commands.help_admin_command import help_admin_command
 from commands.upload_photo import upload_photo
-from handlers.handle_message import handle_message
+from commands.product_navigation import handle_product_callback, handle_navigation_callback
+from handlers.handle_message import handle_message, handle_callback
 from utils.logging_setup import setup_logging
 
 # Environment Variables for Security
@@ -46,6 +47,12 @@ def main():
     application.add_handler(CommandHandler("send_order_photo", send_order_photo))
     application.add_handler(CommandHandler("help_admin", help_admin_command))
     application.add_handler(CommandHandler("upload_photo", upload_photo))
+
+    # Adding callback query handler for inline product browsing
+    application.add_handler(
+        CallbackQueryHandler(handle_product_callback, pattern="product_"))  # Handles product selection
+    application.add_handler(
+        CallbackQueryHandler(handle_navigation_callback, pattern="navigate_"))  # Handles pagination (Next/Previous)
 
     # Adding message handler
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
