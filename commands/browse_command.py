@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import json
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -38,3 +39,20 @@ async def show_product_page(update: Update, page_number: int):
 
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("Available Products:", reply_markup=reply_markup)
+=======
+import json
+import os
+from telegram import Update
+from telegram.ext import ContextTypes
+
+# Load product data from JSON file
+with open(os.path.join(os.path.dirname(__file__), '..', 'utils', 'PRODUCTS.json'), 'r') as file:
+    PRODUCTS = json.load(file)
+
+
+async def browse_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    message = "Available Products:\n"
+    for product in PRODUCTS:
+        message += f"{product['id']}: {product['name']} - ${product['price']}\n"
+    await update.message.reply_text(message)
+>>>>>>> bd5b9ce1bcd5d4b5aba4265e011c85a738c39520

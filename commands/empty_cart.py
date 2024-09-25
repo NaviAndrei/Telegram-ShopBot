@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import json
 from telegram import Update
 from telegram.ext import CallbackContext
@@ -33,3 +34,15 @@ async def empty_cart(update: Update, context: CallbackContext):
     save_carts(carts)
 
     await update.message.reply_text("Your cart has been emptied.")
+=======
+from telegram import Update
+from telegram.ext import CallbackContext
+
+carts = {}
+
+
+async def empty_cart(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    carts[user_id] = []
+    await update.message.reply_text("Your cart has been emptied.")
+>>>>>>> bd5b9ce1bcd5d4b5aba4265e011c85a738c39520

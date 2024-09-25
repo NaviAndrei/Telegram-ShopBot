@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
 	{
 		"id": 1,
@@ -29,4 +30,32 @@
 		"price": 200,
     	"description": "This is a detailed description of Product 5."
 	}
+=======
+[
+	{
+		"id": 1,
+		"name": "Product 1",
+		"price": 100
+	},
+	{
+		"id": 2,
+		"name": "Product 2",
+		"price": 50
+	},
+	{
+		"id": 3,
+		"name": "Product 3",
+		"price": 200
+	},
+	{
+		"id": 4,
+		"name": "Product 4",
+		"price": 50
+	},
+	{
+		"id": 5,
+		"name": "Product 5",
+		"price": 200
+	}
+>>>>>>> bd5b9ce1bcd5d4b5aba4265e011c85a738c39520
 ]
